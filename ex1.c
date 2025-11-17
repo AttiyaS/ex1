@@ -20,7 +20,7 @@ int main()
 
        //checking if lsb is 1 (odd) or 0 (even)  
     int lsbCheck= userChar&lsb1;                    
-    printf("0 for even, 1 for odd:%d\n",lsbCheck);
+    printf("0 for even, 1 for odd: %d\n",lsbCheck);
     
 
     // 2's complement and other representations
@@ -36,9 +36,7 @@ int main()
     printf("1's complement: %d\n", firstComp); 
 
     // Print as unsigned interpretation 
-    printf("unsigned: %u\n",firstComp);     
-
-
+    printf("unsigned: %u\n",secondComp);     
 
     // Shifting right and left
     printf("\nShifting right and left:\n");
@@ -48,16 +46,16 @@ int main()
     printf("Please enter 3 integers\n");
     scanf("%d %d %d", &mainNum, &rightSteps, &leftSteps);
 
-    mainNum = mainNum >> rightSteps;  
-    mainNum = mainNum << leftSteps;
+    mainNum= mainNum >> rightSteps;  
+    mainNum= mainNum << leftSteps;
 
-    printf("After shifting right and left:%d\n",mainNum);   
+    printf("After shifting right and left: %d\n",mainNum);   
 
     // Even - Odd
     //Getting 3 numbers from the user. checking if most of them are even/odd
     printf("\nEven - Odd:\n");
     int num1,num2,num3;
-    printf("please enter 3 integers\n");
+    printf("Please enter 3 integers\n");
     scanf("%d %d %d",&num1,&num2,&num3);
     int lsbnum1 = num1 & 1;  
     int lsbnum2 = num2 & 1;  
@@ -66,7 +64,7 @@ int main()
     int count = lsbnum1 + lsbnum2 + lsbnum3;
     //"Deviding" by moving bits
     int oddOrEven=count >>1;
-    printf("0 most of them are even, 1 - most of them are odd: %d\n",oddOrEven);
+    printf("0 - most of them are even, 1 - most of them are odd: %d\n",oddOrEven);
     
     // Different Bases
     printf("\nDifferent Bases:\n");
